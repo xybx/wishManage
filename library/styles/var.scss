@@ -1,0 +1,113 @@
+@import './variables';
+
+:root {
+  --el-border-radius-base: #{$base-border-radius};
+  --el-left-menu-width: #{$base-left-menu-width};
+  --el-background-color: #{$base-background-color};
+  --el-menu-background-color: #{$base-menu-background};
+  --el-menu-background-color-second: #fff;
+  --el-menu-color-text: #fff;
+  --el-menu-horizontal-sub-item-height: #{$base-menu-item-height - 8px};
+  --el-menu-item-height: #{$base-menu-item-height};
+  --el-color-grey: #{$base-color-grey};
+  --el-color-black: #{$base-color-black};
+
+  --el-color-primary: #{$vab-color-primary};
+  --el-color-primary-light-1: #{$vab-color-primary-light-1};
+  --el-color-primary-light-2: #{$vab-color-primary-light-2};
+  --el-color-primary-light-3: #{$vab-color-primary-light-3};
+  --el-color-primary-light-4: #{$vab-color-primary-light-4};
+  --el-color-primary-light-5: #{$vab-color-primary-light-5};
+  --el-color-primary-light-6: #{$vab-color-primary-light-6};
+  --el-color-primary-light-7: #{$vab-color-primary-light-7};
+  --el-color-primary-light-8: #{$vab-color-primary-light-8};
+  --el-color-primary-light-9: #{$vab-color-primary-light-9};
+  --el-color-primary-dark-2: #{$vab-color-primary};
+
+  --el-color-success: #67c23a;
+  --el-color-success-light: #{$vab-color-success-light};
+  --el-color-success-lighter: #{$vab-color-success-lighter};
+  --el-color-success-light-1: #{$vab-color-success-light-1};
+  --el-color-success-light-2: #{$vab-color-success-light-2};
+  --el-color-success-light-3: #{$vab-color-success-light-3};
+  --el-color-success-light-4: #{$vab-color-success-light-4};
+  --el-color-success-light-5: #{$vab-color-success-light-5};
+  --el-color-success-light-6: #{$vab-color-success-light-6};
+  --el-color-success-light-7: #{$vab-color-success-light-7};
+  --el-color-success-light-8: #e1f3d8;
+  --el-color-success-light-9: #f0f9eb;
+  --el-color-success-dark-2: #{$vab-color-success};
+
+  --el-color-warning: #e6a23c;
+  --el-color-warning-light: #{$vab-color-warning-light};
+  --el-color-warning-lighter: #{$vab-color-warning-lighter};
+  --el-color-warning-light-1: #{$vab-color-warning-light-1};
+  --el-color-warning-light-2: #{$vab-color-warning-light-2};
+  --el-color-warning-light-3: #{$vab-color-warning-light-3};
+  --el-color-warning-light-4: #{$vab-color-warning-light-4};
+  --el-color-warning-light-5: #{$vab-color-warning-light-5};
+  --el-color-warning-light-6: #{$vab-color-warning-light-6};
+  --el-color-warning-light-7: #{$vab-color-warning-light-7};
+  --el-color-warning-light-8: #faecd8;
+  --el-color-warning-light-9: #fdf6ec;
+  --el-color-warning-dark-2: #{$vab-color-warning};
+
+  --el-color-danger: #{$vab-color-danger};
+  --el-color-danger-light: #{$vab-color-danger-light};
+  --el-color-danger-lighter: #{$vab-color-danger-lighter};
+  --el-color-danger-light-1: #{$vab-color-danger-light-1};
+  --el-color-danger-light-2: #{$vab-color-danger-light-2};
+  --el-color-danger-light-3: #{$vab-color-danger-light-3};
+  --el-color-danger-light-4: #{$vab-color-danger-light-4};
+  --el-color-danger-light-5: #{$vab-color-danger-light-5};
+  --el-color-danger-light-6: #{$vab-color-danger-light-6};
+  --el-color-danger-light-7: #{$vab-color-danger-light-7};
+  --el-color-danger-light-8: #{$vab-color-danger-light-8};
+  --el-color-danger-light-9: #{$vab-color-danger-light-9};
+  --el-color-danger-dark-2: #{$vab-color-danger};
+
+  --el-color-error: #f56c6c;
+  --el-color-error-light: #{$vab-color-error-light};
+  --el-color-error-lighter: #{$vab-color-error-lighter};
+  --el-color-error-light-1: #{$vab-color-error-light-1};
+  --el-color-error-light-2: #{$vab-color-error-light-2};
+  --el-color-error-light-3: #{$vab-color-error-light-3};
+  --el-color-error-light-4: #{$vab-color-error-light-4};
+  --el-color-error-light-5: #{$vab-color-error-light-5};
+  --el-color-error-light-6: #{$vab-color-error-light-6};
+  --el-color-error-light-7: #{$vab-color-error-light-7};
+  --el-color-error-light-8: #fde2e2;
+  --el-color-error-light-9: #fef0f0;
+  --el-color-error-dark-2: #{$vab-color-error};
+
+  --el-color-info: #{$vab-color-info};
+  --el-color-info-light: #{$vab-color-info-light};
+  --el-color-info-lighter: #{$vab-color-info-lighter};
+  --el-color-info-dark-2: #{$vab-color-info};
+
+  --el-font-size-small: #{$base-font-size-small};
+  --el-font-size-default: #{$base-font-size-default};
+  --el-font-size-big: #{$base-font-size-big};
+  --el-font-size-bigger: #{$base-font-size-bigger};
+  --el-font-size-max: #{$base-font-size-max};
+  --el-transition: #{$base-transition};
+  --el-left-menu-width-min: #{$base-left-menu-width-min};
+  --el-padding: #{$base-padding};
+  --el-padding2: #{$base-padding2};
+  --el-margin: #{$base-margin};
+  --el-nav-height: #{$base-nav-height};
+  --el-tabs-height: #{$base-tabs-height};
+  --el-footer-height: 50px;
+  --el-mask-color: rgba(255, 255, 255, 0.6);
+  --el-z-index: #{$base-z-index};
+  --el-header-height: #{$base-header-height};
+  --el-tab-item-height: #{$base-tab-item-height};
+  --el-logo-height: #{$base-logo-height};
+  --el-title-color: #{$base-title-color};
+  --el-input-height: #{$base-input-height};
+  --el-right-content-width-min: #{$base-right-content-width-min};
+  --el-container-height: calc(var(--vh, 1vh) * 100 - var(--el-nav-height) - var(--el-tabs-height) - var(--el-padding) * 2);
+  --el-container-height2: calc(
+    var(--vh, 1vh) * 100 - var(--el-nav-height) - var(--el-tabs-height) - var(--el-padding) * 3 - var(--el-footer-height)
+  );
+}

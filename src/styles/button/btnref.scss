@@ -1,0 +1,26 @@
+.btn-container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom:15px;
+  .btn-left{
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .btn-right{
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  :deep(.el-button){
+    color:#fff;
+    height: 40px;
+    font-size:16px;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2022", "ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    /* Linting */
+    "strict": true,
+    "paths": {
+      "~/*": ["./*"],
+      "/@/*": ["./src/*"],
+      "/@vab/*": ["./library/*"]
+    },
+    "types": ["element-plus/global", "vite/client", "vite-plugin-svg-icons/client"]
+  },
+  "include": [
+    "library/**/*.ts",
+    "library/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}

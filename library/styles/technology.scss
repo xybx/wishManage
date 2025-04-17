@@ -1,0 +1,241 @@
+html > body.vab-theme-technology {
+  --el-dialog-bg-color: #040d32;
+  --el-color-black: #cfd3dc;
+  --el-color-white: #040d32;
+  --el-color-grey: #cfd3dc;
+  --el-menu-background-color: #040d32;
+  --el-menu-background-color-second: #040d32;
+  --el-background-technology: #040d32;
+  --el-menu-text-color: #cfd3dc;
+  --el-bg-color-page: #040d32;
+  --el-bg-color: #103171;
+  --el-bg-color-overlay: #103171;
+  --el-text-color-primary: #e5eaf3;
+  --el-text-color-regular: #e5eaf3;
+  --el-text-color-secondary: #e5eaf3;
+  --el-text-color-placeholder: #e5eaf3;
+  --el-text-color-disabled: #cfd3dc;
+  --el-border-color-darker: #{mix($base-color-white, #2c6191, 10%)};
+  --el-border-color-dark: #{mix($base-color-white, #2c6191, 20%)};
+  --el-border-color: #{mix($base-color-white, #2c6191, 10%)};
+  --el-border: 1px solid #{mix($base-color-white, #2c6191, 10%)};
+  --el-border-color-light: #{mix($base-color-white, #2c6191, 20%)};
+  --el-border-color-lighter: #{mix($base-color-white, #2c6191, 30%)};
+  --el-border-color-extra-light: #2c6191;
+  --el-fill-color-darker: #2c6191;
+  --el-fill-color-dark: #2c6191;
+  --el-fill-color: #103171;
+  --el-fill-color-light: #{mix($base-color-white, #103171, 10%)};
+  --el-fill-color-lighter: #{mix($base-color-white, #103171, 20%)};
+  --el-fill-color-extra-light: #{mix($base-color-white, #103171, 10%)};
+  --el-fill-color-blank: #{mix($base-color-white, #103171, 1%)};
+  --el-mask-color: rgba(16, 49, 113, 0.6);
+
+  --w-e-textarea-bg-color: #103171;
+  --w-e-textarea-color: #fff;
+  --w-e-textarea-border-color: #103171;
+  --w-e-textarea-slight-border-color: #2c6191;
+  --w-e-textarea-slight-color: #040d32;
+  --w-e-textarea-slight-bg-color: #040d32;
+  --w-e-textarea-selected-border-color: #b4d5ff;
+  --w-e-textarea-handler-bg-color: #4290f7;
+  --w-e-toolbar-color: #fff;
+  --w-e-toolbar-bg-color: #103171;
+  --w-e-toolbar-active-color: #fff;
+  --w-e-toolbar-active-bg-color: #2c6191;
+  --w-e-toolbar-disabled-color: #fff;
+  --w-e-toolbar-border-color: #2c6191;
+  --w-e-modal-button-bg-color: #2c6191;
+  --w-e-modal-button-border-color: #2c6191;
+
+  color: var(--el-color-grey) !important;
+  background-color: var(--el-color-white) !important;
+
+  .vab-side-bar {
+    border-right: 1px solid var(--el-border-color) !important;
+  }
+
+  .mobile {
+    .vab-side-bar {
+      border-left: 0 solid var(--el-border-color) !important;
+    }
+  }
+
+  .vab-nav {
+    background: var(--el-color-white) !important;
+  }
+
+  section > div[class*='-container'],
+  .no-background-container {
+    background: var(--el-color-white) !important;
+  }
+
+  .vab-column-bar .el-tabs .el-tabs__item {
+    color: var(--el-color-grey) !important;
+  }
+
+  .vab-column-bar {
+    border-right: 1px solid var(--el-border-color) !important;
+
+    &-arrow {
+      .el-tabs {
+        .el-tabs__item {
+          &.is-active {
+            color: var(--el-menu-color-text) !important;
+            background: transparent !important;
+
+            .vab-column-grid {
+              background: transparent !important;
+
+              &:after {
+                border-color: transparent var(--el-menu-color-text) transparent transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vab-tabs-content-card .el-tabs__header .el-tabs__item {
+    border: 1px solid var(--el-border-color) !important;
+  }
+
+  .vab-column-bar .el-tabs .el-tabs__nav {
+    margin-left: -1px !important;
+    background: var(--el-color-white) !important;
+    border-right: 1px solid var(--el-border-color) !important;
+  }
+
+  .vab-logo-column {
+    .logo {
+      background: var(--el-color-white) !important;
+      border-right: 1px solid var(--el-border-color) !important;
+    }
+  }
+
+  /*el-dialog、el-message-box */
+  .el-dialog,
+  .el-message-box {
+    position: relative;
+    overflow: visible;
+    background: var(--el-background-technology);
+    border: 2px solid #00a1ff;
+    border-radius: 8px;
+
+    &__header {
+      position: relative;
+      background: var(--el-background-technology) !important;
+
+      .el-dialog__title,
+      .el-dialog__close {
+        color: #fff;
+      }
+
+      i[class*='__close'] {
+        width: 24px;
+        height: 24px;
+        line-height: 22px;
+        border: 1px solid transparent;
+        transition: none;
+
+        &:hover {
+          color: #00a1ff;
+        }
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: 30px;
+      z-index: 0;
+      width: calc(100% - 60px);
+      pointer-events: none;
+      content: '';
+      border-top: 2px solid #016886;
+      border-bottom: 2px solid #016886;
+    }
+
+    &::after {
+      position: absolute;
+      top: 30px;
+      right: -2px;
+      left: -2px;
+      z-index: 0;
+      height: calc(100% - 60px);
+      pointer-events: none;
+      content: '';
+      border-right: 2px solid #016886;
+      border-left: 2px solid #016886;
+    }
+  }
+
+  /*el-drawer */
+  .el-drawer.rtl {
+    border-left: 1px solid var(--el-border-color);
+  }
+
+  .el-pagination.is-background .btn-prev:disabled,
+  .el-pagination.is-background .btn-next:disabled {
+    background-color: var(--el-pagination-button-bg-color);
+  }
+
+  .el-drawer__header {
+    color: var(--el-color-grey);
+  }
+
+  .el-radio-button {
+    &__inner {
+      border: 1px solid var(--el-border-color) !important;
+    }
+  }
+
+  .el-input.is-disabled {
+    .el-input__wrapper {
+      background: #214e85 !important;
+    }
+  }
+
+  .vab-header {
+    border-bottom: 1px solid var(--el-border-color) !important;
+
+    .vab-logo-horizontal {
+      height: calc(var(--el-header-height) - 2px);
+    }
+
+    .vab-main .right-panel {
+      [class*='ri-'],
+      .username {
+        color: var(--el-color-grey) !important;
+      }
+    }
+  }
+
+  .vab-tabs-content-smooth .el-tabs__header .el-tabs__item:hover {
+    color: var(--el-color-grey);
+    background: #123372;
+  }
+
+  /* .vab-hey-message */
+  [class*='vab-hey-message'] {
+    border: 1px solid var(--el-border-color) !important;
+  }
+
+  /* svg */
+  [fill='#fff'] {
+    fill: var(--el-background-technology) !important;
+  }
+
+  [fill='#f2f2f2'],
+  [fill='#d0d2d5'] {
+    fill: var(--el-bg-color) !important;
+  }
+
+  .login-container,
+  .register-container {
+    background: url('/@/assets/login_images/background.png') center center fixed no-repeat;
+    background-size: cover;
+  }
+}

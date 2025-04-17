@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>横向</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="横向">
+            <rect id="矩形备份-15" fill="#F7F7F7" x="0" y="0" width="100" height="100"></rect>
+            <rect id="矩形备份-16" fill="#D7D8D9" x="10" y="10" width="80" height="16" rx="2"></rect>
+            <path d="M10,18 L90,18 L90,24 C90,25.1045695 89.1045695,26 88,26 L12,26 C10.8954305,26 10,25.1045695 10,24 L10,18 L10,18 Z" id="矩形备份-23" fill="#7CADF6"></path>
+            <rect id="矩形备份-17" fill="#D7D8D9" x="28" y="30" width="29" height="22" rx="2"></rect>
+            <rect id="矩形备份-18" fill="#D7D8D9" x="28" y="56" width="29" height="34" rx="2"></rect>
+            <rect id="矩形备份-19" fill="#D7D8D9" x="61" y="70" width="29" height="20" rx="2"></rect>
+            <rect id="矩形备份-20" fill="#D7D8D9" x="61" y="48" width="29" height="19" rx="2"></rect>
+            <rect id="矩形备份-21" fill="#D7D8D9" x="61" y="30" width="29" height="14" rx="2"></rect>
+            <rect id="矩形备份-22" fill="#D7D8D9" x="10" y="30" width="14" height="60" rx="2"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,213 @@
+.login-container {
+  background: url("/@/assets/login/loginbged.png") center no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  .el-row{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    .el-col{
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      height:100%;
+      .top-container{
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        h2{
+          display: flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          font-size:65px;
+          height:60px;
+          font-family: 'Hei FangZheng';
+          font-weight:400;
+          margin:0;
+          color: #fff;
+          letter-spacing:10px;
+          text-shadow: 0px 7px 1px rgba(8,50,77,0.3);
+          margin-bottom:15px;
+        }
+        .enbox{
+          font-family: "Arial";
+          font-size:20px;
+          font-weight: bold;
+          color:rgba(255, 255, 255, 1);
+          letter-spacing:14px;
+          position: relative;
+          &::before{
+            content: '';
+            display: inline-block;
+            position:absolute;
+            width: 186px;
+            height: 4px;
+            background: linear-gradient(-90deg,rgba(255, 255, 255, .52),transparent);
+            top: calc(50% - 2px);
+            left:-230px;
+          }
+          &::after{
+            content: '';
+            display: inline-block;
+            position:absolute;
+            width: 186px;
+            height: 4px;
+            background: linear-gradient(90deg,rgba(255, 255, 255, .52),transparent);
+            top: calc(50% - 2px);
+            right:-220px;
+          }
+        }
+      }
+      .body-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .leftbg{
+          width:820px;
+          height:620px;
+          background: url('/@/assets/login/bgicon.png') -45px -80px no-repeat;
+          background-size:100% 100%;
+        }
+        .formbox{
+          border-radius:10px;
+          width:560px;
+          padding:0;
+          :deep(.el-card__body){
+            padding:40px 60px 50px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            h3{
+              font-size:32px;
+              color:rgba(51, 51, 51, 1);
+              text-align: center;
+              margin:0;
+              position: relative;
+              z-index:1;
+              &:before{
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width:130px;
+                height: 14px;
+                bottom:4px;
+                background:rgba(84, 150, 243, .3);
+                z-index:-1;
+              }
+            }
+            .login-form{
+              width:100%;
+              margin-top:40px;
+              .logbtn{
+                width:100%;
+                height:60px;
+                font-size:22px;
+                font-family:'DINBlack';
+                background: linear-gradient(90deg,rgba(42, 101, 194, 1),rgba(72, 136, 234, 1));
+              }
+              .el-form-item{
+                height:60px;
+                background:rgba(248, 249, 251, 1);
+                border-radius: 5px;
+                border: 1px solid rgba(224, 230, 239, 1);
+                margin-bottom:20px;
+                .el-form-item__content{
+                  .el-form-item__error{
+                    top: 107%;
+                  }
+                  .itembox{
+                    width:100%;
+                    height:100%;
+                    padding:15px 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    .leftbox{
+                      width:25px;
+                      height:100%;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 1px;
+                        height: 16px;
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        right:-20px;
+                        background:rgba(204, 208, 219, 1);
+                      }
+                      i{
+                        font-size: 24px;
+                        color: rgba(68, 132, 232, .7);
+                        &.icon-keshi{
+                          font-size:25px;
+                        }
+                        &.icon-fl-renyuan{
+                          font-size:26px;
+                        }
+                        &.icon-ziyuanxhdpi{
+                          font-size:20px;
+                        }
+                      }
+                    }
+                    .el-input{
+                      width:calc(100% - 45px);
+                       .el-input__wrapper{
+                         padding:0 0 0 25px;
+                         background-color: transparent;
+                         box-shadow: none;
+                         font-size:16px;
+                       }
+                    }
+                    .el-select{
+                      width:calc(100% - 45px);
+                      .el-select__wrapper{
+                        padding:0 0 0 25px;
+                        background-color: transparent;
+                        box-shadow: none;
+                        font-size:16px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+:deep(.el-input) {
+  .el-input__wrapper {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+    &.is-focus,
+    &:hover {
+      box-shadow: none !important;
+    }
+
+    input:-webkit-autofill {
+      /* 通过延时渲染背景色变相去除背景颜色 */
+      transition: background-color 1000s ease-in-out 0s;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/*
+ * @ProjectName:fjsy-hq
+ * @Author:12390
+ * @Date: 2023/6/14 15:18:30
+ * @LastEditors: 12390
+ * @LastEditTime: 2023/6/14 15:18:30
+ * @Description: HTML Page of Css
+ * Copyright (c) 2022 by xybx, All Rights Reserved. 
+*/
+@font-face {
+  font-family: "DINBlack";
+  src: url('DIN-BlackItalic.woff2') format('woff2'),
+  url('DIN-BlackItalic.woff') format('woff'),
+  url('DIN-BlackItalic.otf') format('truetype');
+}

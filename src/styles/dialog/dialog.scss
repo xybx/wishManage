@@ -1,0 +1,8 @@
+:deep(.el-dialog.is-align-center.el-dialog--center.dialogbox) {
+    padding: 0 !important;
+    .el-dialog__header {
+      background: #f8f9fb;
+      border-radius: 10px 10px 0px 0px;
+      border-bottom: 1px solid #ecedf1;
+    }
+  }

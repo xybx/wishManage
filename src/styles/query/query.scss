@@ -1,0 +1,56 @@
+.vab-query-form{
+  width:100%;
+  margin-bottom:15px;
+  background-color:rgba(248, 249, 251, 1);
+  border-radius: 5px;
+  padding:18px 20px;
+  :deep(.top-panel) {
+    margin-bottom:0;
+    .el-form{
+      width:100%;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      flex-wrap: wrap;
+      position: relative;
+      .el-form-item{
+        width:23%;
+        margin-right:10px!important;
+        margin-bottom: 0!important;
+        .el-form-item__content{
+          .el-input{
+            width: 100%;
+          }
+          .el-input__wrapper.is-focus{
+            box-shadow:0 0 0 1px rgba(68, 132, 232, 1) inset;
+          }
+          .el-input__wrapper:hover{
+            box-shadow:0 0 0 1px rgba(68, 132, 232, 1) inset;
+          }
+          .el-select__wrapper:hover{
+            box-shadow:0 0 0 1px rgba(68, 132, 232, 1) inset;
+          }
+          .el-select__wrapper.is-focused{
+            box-shadow:0 0 0 1px rgba(68, 132, 232, 1) inset;
+          }
+        }
+      }
+      .hidden-xs-only{
+        width: unset  !important;
+        position: absolute;
+        right:3px;
+        top:0;
+        span{
+          color:rgba(68, 132, 232, 1);
+        }
+      }
+      .overrow{
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        margin-top:15px;
+      }
+    }
+  }
+}
